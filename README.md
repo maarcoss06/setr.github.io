@@ -12,3 +12,17 @@ Se ha utilizado dos interrupciones hardware. Una para el pulsador y otra para el
 
 ### Watchdog
 Si que se ha implementado Watchdog. Al inicio de setup() se ejecuta wdt_disable() para evitar bucles de reinicio tras un reset previo, y una vez inicializados todos los periféricos y el arranque se habilita con wdt_enable(WDTO_4S). Se ha optado por esperar 4 segundos porque al utilizar gran cantidad de sensores y en especial el sensor de infrarrojos para el que se ha usado pulseIn, puede haber un cierto tiempo de espera por lo que poner un Watchdog corto podía implicar un reinicio erróneo de arduino.
+
+## Esquema del circuito
+
+<img width="1156" height="666" alt="Captura desde 2026-11-23 21-22-47" src="https://github.com/user-attachments/assets/61104e8f-03d3-4fde-b126-d0e7f90042a3" />
+
+## Fotos del circuito:
+
+<img width="2048" height="1152" alt="WhatsApp Image 2026-11-23 at 21 51 15" src="https://github.com/user-attachments/assets/6020ed3a-9888-4b72-86b1-28e4a22ae38a" />
+
+<img width="2048" height="1152" alt="WhatsApp Image 2026-11-23 at 21 51 15(1)" src="https://github.com/user-attachments/assets/b8325761-15fe-4aa3-8494-1314a3c8e984" />
+
+<img width="2048" height="1152" alt="WhatsApp Image 2026-11-23 at 21 51 14" src="https://github.com/user-attachments/assets/444a713e-6d67-49a8-a9b8-7478cc3d847e" />
+
+<img width="2048" height="1152" alt="WhatsApp Image 2026-11-23 at 21 51 14(1)" src="https://github.com/user-attachments/assets/59fa516f-09c3-4f89-937f-f2dcfad1bf48" />
